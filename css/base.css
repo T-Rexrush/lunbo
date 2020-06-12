@@ -1,0 +1,13 @@
+*{padding: 0;margin: 0;}
+.content{width:600px;height:400px;position: relative;left: 50%; transform: translate(-50%);border:1px solid #333;}
+.box{ position: absolute;width:600px;height:400px;}
+.box img{position: absolute;}
+.box img:not(:first-child){display: none;}
+.prev,.next{  border:none;position: absolute;cursor: pointer; z-index: 101;width:40px;height:70px;background-color: transparent;background-image: url("../images/icon-slides.png");top: 50%;transform: translateY(-50%);}
+.prev{background-position-x: -86px;}
+.prev:hover{background-position: 0;}
+.next{right:0;background-position-x: -125px;}
+.next:hover{background-position-x: -43px;}
+.buttons{position: absolute;width:130px;height:20px;bottom:20px;left:50%;transform: translateX(-50%);}
+span{cursor: pointer;width:20px;height:20px;display: inline-block;border-radius: 50%;border:1px solid #fff;background-color:rgba(44,44,44,.3);}
+.selected{background-color: orangered;}
